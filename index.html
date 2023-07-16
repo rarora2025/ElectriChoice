@@ -1,0 +1,2700 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel='stylesheet' href='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+<link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://startbootstrap.com/templates/agency/font-awesome-4.1.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    
+<!-- partial:index.partial.html -->
+<body id="page-top" class="index" data-pinterest-extension-installed="cr1.3.4">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            
+                <img src="logo2.png" width="65px" height="65px">
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden active">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#about2">Calculator</a>
+                    </li>
+                   
+                    <li class="">
+                        <a class="page-scroll" href="#database">Database</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+    
+            
+<div class = "main">
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+    <h1 class='glow'>ElectriChoice</h1>
+    <br>
+    <em>
+    <h6> Assisting individuals in balancing their budget, preferences, and sustainability goals. </h6>
+</em>
+    <div class="road">
+        <div class="road-top-half"></div>
+        <div class="road-bottom-half"></div>
+    </div>
+
+    <div class="car-container">
+        <div class="car-top1">
+            <div class="window1"></div>
+            <div class="window2"></div>
+
+        </div>
+        <div class="car-top2">
+            <div class="door">
+                <div class="door-knob"></div>
+            </div>
+        </div>
+        <div class="car-bottom">
+            <div class="wheel1-top"></div>
+            <div class="wheel1">
+                <div class="wheel-dot1"></div>
+                <div class="wheel-dot2"></div>
+                <div class="wheel-dot3"></div>
+                <div class="wheel-dot4"></div>
+
+            </div>
+
+            <div class="wheel2-top"></div>
+            <div class="wheel2">
+                <div class="wheel-dot1"></div>
+                <div class="wheel-dot2"></div>
+                <div class="wheel-dot3"></div>
+                <div class="wheel-dot4"></div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+        </div>
+    </header>
+
+   
+     
+    <section id="about" class="about" >
+        <div class="container" style ="margin-top: 50px; margin-bottom: 50px;">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                  
+                   
+                    <h5>With the world moving towards electric vehicles to combat climate change, ElectriChoice <span class="highlight">aims to simplify the process of transitioning from a gas-powered car to an electric car.</span>
+                    </h5>
+                    <br>
+                    <hr>
+                    <br>
+                    <h5>
+                        With transportation accounting for 28% of greenhouse gas emissions, research has demonstrated that electric vehicles significantly reduce both greenhouse gases and air pollutants. 
+                      </h5>
+                    <br>
+                    <br>
+                    <div id="live-poll-area">
+                        <div class="graph-container">
+                          <div class="graph"></div>
+                        </div>
+                        <div class="answer-list"></div>
+                      </div>
+                      <br>
+                     
+
+                </section>
+                
+                <section id="about2" style="background-image: linear-gradient(cyan, #38c95f);">
+                    <strong>
+                    <div id="str"></div>
+                   
+                    </strong>
+                    <em>
+                    <h5 style="padding: 20px;">Our all-in-one solution for assessing potential savings in both finances and environmental impact. </span>
+                    </h5>
+                </em>
+                    
+                </div>
+            </div>
+            <div id="container" style="margin-top: 10px">
+                <h4>Preferences</h4>
+                <div id="calculator">
+              
+              
+                  <form>
+                    <p>What is your budget for purchasing an EV?
+                      <p>
+                        $ <input id="billamt" type="text" placeholder="Enter Amount">
+              
+                        <p>Fuel Economy
+                          <p>
+                            <select id="serviceQual2">
+                          <option disabled selected value="0">-- Choose an Option --</option>
+                          <option value="350">Best</option>
+                          <option value="375">Above Average</option>
+                          <option value="400">Average</option>
+                          <option value="425">Below Average</option>
+                          <option value="450">Worst</option>
+                      </select>
+              
+                  </form>
+                  <p>How many miles do you drive per year?</p>
+                  <input id="peopleamt" type="text" placeholder="Enter Miles"> miles
+                  <button type="button" id="calculate">Calculate!</button>
+              
+                </div>
+                <!--calculator end-->
+                <hr>
+                <div id="totalTip">
+                  <sup></sup><span id="tip">0.00</span>
+                  <small id="each">lbs CO2 each year</small>
+                </div>
+                <!--totalTip end-->
+             <hr>
+                <div id="totalTip2" style="margin-top: 25px">
+                    <sup>$</sup><span id="tip2">0.00</span>
+                    <small id="each">each year</small>
+                  </div>
+                  <hr>
+              </div>
+            
+             
+              <!--totalTip end-->
+            
+            </div>
+              <!--container end-->
+              <script type="text/javascript" src="tipcalculator.js"></script>
+            
+        </div>
+        </section>
+
+        </section>
+
+
+
+
+
+          <section id="database">
+            <h2 class="section-heading">Database</h2>
+            
+      <div class="header_wrap">
+        <div class="num_rows">
+		
+				<div class="form-group"> 	<!--		Show Numbers Of Rows 		-->
+			 		<select class  ="form-control" name="state" id="maxRows">
+						 
+						 
+						 <option value="10">10</option>
+						 <option value="15">15</option>
+						 <option value="20">20</option>
+						 <option value="50">50</option>
+						 <option value="70">70</option>
+						 <option value="100">100</option>
+            <option value="5000">Show ALL Rows</option>
+						</select>
+			 		
+			  	</div>
+        </div>
+        <div class="tb_search">
+<input type="text" id="search_input_all" onkeyup="FilterkeyWord_all_table()" placeholder="Search.." class="form-control">
+        </div>
+      </div>
+<table class="table table-striped table-class" id= "table-id">
+  
+	
+<thead>
+<tr>
+		<th>Name</th>
+		<th>Range</th>
+		<th>Top Speed</th>
+        <th>Acceleration</th>
+        <th>Efficiency</th>
+	</tr>
+  </thead>
+<tbody>
+	<tr>
+        <td>Lucid Air Dream Edition P</td>
+        <td>645 km</td>
+        <td>270 km/h</td>
+        <td>2.7 sec</td>
+        <td>183 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Porsche Taycan Turbo S</td>
+        <td>400 km</td>
+        <td>260 km/h</td>
+        <td>2.8 sec</td>
+        <td>209 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Audi e-tron GT RS</td>
+        <td>405 km</td>
+        <td>250 km/h</td>
+        <td>3.3 sec</td>
+        <td>210 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Renault Zoe ZE50 R110</td>
+        <td>315 km</td>
+        <td>135 km/h</td>
+        <td>11.4 sec</td>
+        <td>165 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Audi Q4 e-tron 35</td>
+        <td>285 km</td>
+        <td>160 km/h</td>
+        <td>9.0 sec</td>
+        <td>182 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Tesla Model Y Performance</td>
+        <td>415 km</td>
+        <td>250 km/h</td>
+        <td>3.7 sec</td>
+        <td>181 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Porsche Taycan 4 Cross Turismo</td>
+        <td>425 km</td>
+        <td>220 km/h</td>
+        <td>5.1 sec</td>
+        <td>197 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Renault Zoe ZE50 R135</td>
+        <td>310 km</td>
+        <td>140 km/h</td>
+        <td>9.5 sec</td>
+        <td>168 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Porsche Taycan Turbo</td>
+        <td>415 km</td>
+        <td>260 km/h</td>
+        <td>3.2 sec</td>
+        <td>202 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Smart EQ fortwo coupe</td>
+        <td>100 km</td>
+        <td>130 km/h</td>
+        <td>11.6 sec</td>
+        <td>167 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Smart EQ fortwo cabrio</td>
+        <td>95 km</td>
+        <td>130 km/h</td>
+        <td>11.9 sec</td>
+        <td>176 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Honda e Advance</td>
+        <td>170 km</td>
+        <td>145 km/h</td>
+        <td>8.3 sec</td>
+        <td>168 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Porsche Taycan 4S</td>
+        <td>395 km</td>
+        <td>250 km/h</td>
+        <td>4.0 sec</td>
+        <td>180 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Porsche Taycan 4S Plus</td>
+        <td>460 km</td>
+        <td>250 km/h</td>
+        <td>4.0 sec</td>
+        <td>182 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQV 300 Long</td>
+        <td>305 km</td>
+        <td>160 km/h</td>
+        <td>12.1 sec</td>
+        <td>295 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Lexus UX 300e</td>
+        <td>235 km</td>
+        <td>160 km/h</td>
+        <td>7.5 sec</td>
+        <td>191 Wh/km</td>
+        </tr>
+        <tr>
+        <td>BMW i4 eDrive40</td>
+        <td>470 km</td>
+        <td>190 km/h</td>
+        <td>5.7 sec</td>
+        <td>172 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Renault Twingo Electric</td>
+        <td>130 km</td>
+        <td>135 km/h</td>
+        <td>12.6 sec</td>
+        <td>164 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Fiat 500e Cabrio 42 kWh</td>
+        <td>230 km</td>
+        <td>150 km/h</td>
+        <td>9.0 sec</td>
+        <td>162 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Skoda Enyaq iV 60</td>
+        <td>325 km</td>
+        <td>160 km/h</td>
+        <td>8.7 sec</td>
+        <td>178 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Skoda Enyaq iV 80</td>
+        <td>420 km</td>
+        <td>160 km/h</td>
+        <td>8.6 sec</td>
+        <td>183 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Skoda Enyaq iV 80x</td>
+        <td>400 km</td>
+        <td>160 km/h</td>
+        <td>6.9 sec</td>
+        <td>193 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Skoda Enyaq iV RS</td>
+        <td>390 km</td>
+        <td>180 km/h</td>
+        <td>6.2 sec</td>
+        <td>197 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Fiat 500e Hatchback 42 kWh</td>
+        <td>235 km</td>
+        <td>150 km/h</td>
+        <td>9.0 sec</td>
+        <td>159 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Audi Q4 Sportback e-tron 35</td>
+        <td>295 km</td>
+        <td>160 km/h</td>
+        <td>9.0 sec</td>
+        <td>176 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Nissan Ariya 63kWh</td>
+        <td>320 km</td>
+        <td>160 km/h</td>
+        <td>7.5 sec</td>
+        <td>197 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Nissan Ariya 87kWh</td>
+        <td>435 km</td>
+        <td>160 km/h</td>
+        <td>7.6 sec</td>
+        <td>200 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Nissan Ariya e-4ORCE 87kWh - 225 kW</td>
+        <td>420 km</td>
+        <td>200 km/h</td>
+        <td>5.7 sec</td>
+        <td>207 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Nissan Ariya e-4ORCE 87kWh - 290 kW</td>
+        <td>420 km</td>
+        <td>200 km/h</td>
+        <td>5.1 sec</td>
+        <td>207 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Volkswagen ID.4 Pro Performance</td>
+        <td>410 km</td>
+        <td>160 km/h</td>
+        <td>8.5 sec</td>
+        <td>188 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQV 300 Extra-Long</td>
+        <td>305 km</td>
+        <td>160 km/h</td>
+        <td>12.1 sec</td>
+        <td>295 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Lucid Air Grand Touring</td>
+        <td>665 km</td>
+        <td>270 km/h</td>
+        <td>3.2 sec</td>
+        <td>168 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Lucid Air Touring</td>
+        <td>550 km</td>
+        <td>250 km/h</td>
+        <td>3.4 sec</td>
+        <td>160 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Lucid Air Pure</td>
+        <td>560 km</td>
+        <td>200 km/h</td>
+        <td>4.2 sec</td>
+        <td>157 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Fiat 500e Hatchback 24 kWh</td>
+        <td>135 km</td>
+        <td>135 km/h</td>
+        <td>9.0 sec</td>
+        <td>158 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Fiat 500e 3+1 42 kWh</td>
+        <td>235 km</td>
+        <td>150 km/h</td>
+        <td>9.0 sec</td>
+        <td>159 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQC 400 4MATIC</td>
+        <td>370 km</td>
+        <td>180 km/h</td>
+        <td>5.1 sec</td>
+        <td>216 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Citroen e-SpaceTourer M 50 kWh</td>
+        <td>185 km</td>
+        <td>130 km/h</td>
+        <td>12.1 sec</td>
+        <td>250 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Citroen e-SpaceTourer XL 50 kWh</td>
+        <td>180 km</td>
+        <td>130 km/h</td>
+        <td>12.1 sec</td>
+        <td>257 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Citroen e-SpaceTourer M 75 kWh</td>
+        <td>265 km</td>
+        <td>130 km/h</td>
+        <td>13.3 sec</td>
+        <td>257 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Citroen e-SpaceTourer XL 75 kWh</td>
+        <td>260 km</td>
+        <td>130 km/h</td>
+        <td>13.3 sec</td>
+        <td>262 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Opel Zafira-e Life M 50 kWh</td>
+        <td>185 km</td>
+        <td>130 km/h</td>
+        <td>12.1 sec</td>
+        <td>250 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Opel Zafira-e Life L 50 kWh</td>
+        <td>180 km</td>
+        <td>130 km/h</td>
+        <td>12.1 sec</td>
+        <td>257 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Opel Zafira-e Life M 75 kWh</td>
+        <td>265 km</td>
+        <td>130 km/h</td>
+        <td>13.3 sec</td>
+        <td>257 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Opel Zafira-e Life L 75 kWh</td>
+        <td>260 km</td>
+        <td>130 km/h</td>
+        <td>13.3 sec</td>
+        <td>262 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Peugeot e-Traveller Standard 50 kWh</td>
+        <td>185 km</td>
+        <td>130 km/h</td>
+        <td>13.1 sec</td>
+        <td>250 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Peugeot e-Traveller Long 50 kWh</td>
+        <td>180 km</td>
+        <td>130 km/h</td>
+        <td>13.1 sec</td>
+        <td>257 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Peugeot e-Traveller Standard 75 kWh</td>
+        <td>265 km</td>
+        <td>130 km/h</td>
+        <td>14.3 sec</td>
+        <td>257 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Peugeot e-Traveller Long 75 kWh</td>
+        <td>260 km</td>
+        <td>130 km/h</td>
+        <td>14.3 sec</td>
+        <td>262 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Porsche Taycan</td>
+        <td>410 km</td>
+        <td>230 km/h</td>
+        <td>5.4 sec</td>
+        <td>173 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Porsche Taycan Plus</td>
+        <td>475 km</td>
+        <td>230 km/h</td>
+        <td>5.4 sec</td>
+        <td>176 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Tesla Model S Dual Motor</td>
+        <td>570 km</td>
+        <td>250 km/h</td>
+        <td>3.2 sec</td>
+        <td>167 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Tesla Model S Plaid</td>
+        <td>550 km</td>
+        <td>282 km/h</td>
+        <td>2.1 sec</td>
+        <td>173 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Tesla Model X Dual Motor</td>
+        <td>470 km</td>
+        <td>250 km/h</td>
+        <td>3.9 sec</td>
+        <td>202 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Tesla Model X Plaid</td>
+        <td>455 km</td>
+        <td>262 km/h</td>
+        <td>2.6 sec</td>
+        <td>209 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mini Cooper SE</td>
+        <td>180 km</td>
+        <td>150 km/h</td>
+        <td>7.3 sec</td>
+        <td>161 Wh/km</td>
+        </tr>
+        <tr>
+        <td>JAC iEV7s</td>
+        <td>225 km</td>
+        <td>132 km/h</td>
+        <td>12.0 sec</td>
+        <td>173 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Volkswagen ID.4 Pure Performance</td>
+        <td>285 km</td>
+        <td>160 km/h</td>
+        <td>9.0 sec</td>
+        <td>182 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Audi e-tron GT quattro</td>
+        <td>420 km</td>
+        <td>245 km/h</td>
+        <td>4.1 sec</td>
+        <td>202 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Hyundai Kona Electric 39 kWh</td>
+        <td>250 km</td>
+        <td>155 km/h</td>
+        <td>9.9 sec</td>
+        <td>157 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Hyundai Kona Electric 64 kWh</td>
+        <td>395 km</td>
+        <td>167 km/h</td>
+        <td>7.9 sec</td>
+        <td>162 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Porsche Taycan 4S Cross Turismo</td>
+        <td>425 km</td>
+        <td>240 km/h</td>
+        <td>4.1 sec</td>
+        <td>197 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Porsche Taycan Turbo Cross Turismo</td>
+        <td>400 km</td>
+        <td>250 km/h</td>
+        <td>3.3 sec</td>
+        <td>209 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Porsche Taycan Turbo S Cross Turismo</td>
+        <td>385 km</td>
+        <td>250 km/h</td>
+        <td>2.9 sec</td>
+        <td>217 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Kia EV6 GT</td>
+        <td>370 km</td>
+        <td>260 km/h</td>
+        <td>3.5 sec</td>
+        <td>200 Wh/km</td>
+        </tr>
+        <tr>
+        <td>BMW iX xDrive40</td>
+        <td>360 km</td>
+        <td>200 km/h</td>
+        <td>6.1 sec</td>
+        <td>197 Wh/km</td>
+        </tr>
+        <tr>
+        <td>BMW iX xDrive50</td>
+        <td>505 km</td>
+        <td>200 km/h</td>
+        <td>4.6 sec</td>
+        <td>208 Wh/km</td>
+        </tr>
+        <tr>
+        <td>MG MG5 Electric Long Range</td>
+        <td>335 km</td>
+        <td>185 km/h</td>
+        <td>7.7 sec</td>
+        <td>171 Wh/km</td>
+        </tr>
+        <tr>
+        <td>MG Marvel R Performance</td>
+        <td>330 km</td>
+        <td>200 km/h</td>
+        <td>4.9 sec</td>
+        <td>197 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Hyundai IONIQ 5 Standard Range 2WD</td>
+        <td>295 km</td>
+        <td>185 km/h</td>
+        <td>8.5 sec</td>
+        <td>183 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Kia EV6 Standard Range 2WD</td>
+        <td>305 km</td>
+        <td>185 km/h</td>
+        <td>8.5 sec</td>
+        <td>177 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Kia EV6 Long Range 2WD</td>
+        <td>410 km</td>
+        <td>185 km/h</td>
+        <td>7.3 sec</td>
+        <td>180 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Kia EV6 Long Range AWD</td>
+        <td>400 km</td>
+        <td>185 km/h</td>
+        <td>5.2 sec</td>
+        <td>185 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQS 450+</td>
+        <td>640 km</td>
+        <td>210 km/h</td>
+        <td>6.2 sec</td>
+        <td>168 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQS 580 4MATIC</td>
+        <td>605 km</td>
+        <td>210 km/h</td>
+        <td>4.3 sec</td>
+        <td>178 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Volkswagen ID.4 Pure</td>
+        <td>285 km</td>
+        <td>160 km/h</td>
+        <td>10.9 sec</td>
+        <td>182 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Audi Q4 e-tron 40</td>
+        <td>405 km</td>
+        <td>160 km/h</td>
+        <td>8.5 sec</td>
+        <td>189 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Audi Q4 e-tron 50 quattro</td>
+        <td>385 km</td>
+        <td>180 km/h</td>
+        <td>6.2 sec</td>
+        <td>199 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Audi Q4 Sportback e-tron 50 quattro</td>
+        <td>400 km</td>
+        <td>180 km/h</td>
+        <td>6.2 sec</td>
+        <td>192 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQB 350 4MATIC</td>
+        <td>335 km</td>
+        <td>160 km/h</td>
+        <td>6.2 sec</td>
+        <td>199 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQA 300 4MATIC</td>
+        <td>350 km</td>
+        <td>160 km/h</td>
+        <td>7.7 sec</td>
+        <td>190 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQA 350 4MATIC</td>
+        <td>350 km</td>
+        <td>160 km/h</td>
+        <td>6.0 sec</td>
+        <td>190 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Toyota PROACE Verso M 75 kWh</td>
+        <td>265 km</td>
+        <td>130 km/h</td>
+        <td>13.1 sec</td>
+        <td>257 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Toyota PROACE Verso L 75 kWh</td>
+        <td>260 km</td>
+        <td>130 km/h</td>
+        <td>13.1 sec</td>
+        <td>262 Wh/km</td>
+        </tr>
+        <tr>
+        <td>CUPRA Born 150 kW - 58 kWh</td>
+        <td>350 km</td>
+        <td>160 km/h</td>
+        <td>7.3 sec</td>
+        <td>166 Wh/km</td>
+        </tr>
+        <tr>
+        <td>CUPRA Born 170 kW - 58 kWh</td>
+        <td>345 km</td>
+        <td>160 km/h</td>
+        <td>6.6 sec</td>
+        <td>168 Wh/km</td>
+        </tr>
+        <tr>
+        <td>CUPRA Born 170 kW - 77 kWh</td>
+        <td>450 km</td>
+        <td>160 km/h</td>
+        <td>7.0 sec</td>
+        <td>171 Wh/km</td>
+        </tr>
+        <tr>
+        <td>BMW i4 M50</td>
+        <td>435 km</td>
+        <td>225 km/h</td>
+        <td>3.9 sec</td>
+        <td>186 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Renault Megane E-Tech EV60 220hp</td>
+        <td>360 km</td>
+        <td>160 km/h</td>
+        <td>7.4 sec</td>
+        <td>167 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Peugeot e-Rifter Standard 50 kWh</td>
+        <td>205 km</td>
+        <td>135 km/h</td>
+        <td>11.7 sec</td>
+        <td>226 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Peugeot e-Rifter Long 50 kWh</td>
+        <td>200 km</td>
+        <td>135 km/h</td>
+        <td>11.7 sec</td>
+        <td>232 Wh/km</td>
+        </tr>
+        <tr>
+        <td>MG Marvel R</td>
+        <td>335 km</td>
+        <td>200 km/h</td>
+        <td>7.9 sec</td>
+        <td>194 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Audi Q4 e-tron 45 quattro</td>
+        <td>385 km</td>
+        <td>180 km/h</td>
+        <td>6.9 sec</td>
+        <td>199 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Audi Q4 Sportback e-tron 40</td>
+        <td>425 km</td>
+        <td>160 km/h</td>
+        <td>8.5 sec</td>
+        <td>180 Wh/km</td>
+        </tr>
+        <tr>
+        <td>BMW iX3</td>
+        <td>385 km</td>
+        <td>180 km/h</td>
+        <td>6.8 sec</td>
+        <td>192 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Renault Megane E-Tech EV40 130hp</td>
+        <td>250 km</td>
+        <td>150 km/h</td>
+        <td>10.0 sec</td>
+        <td>160 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQS AMG 53 4MATIC+</td>
+        <td>565 km</td>
+        <td>250 km/h</td>
+        <td>3.4 sec</td>
+        <td>191 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQE 350+</td>
+        <td>525 km</td>
+        <td>210 km/h</td>
+        <td>6.4 sec</td>
+        <td>173 Wh/km</td>
+        </tr>
+        <tr>
+        <td>MG ZS EV Standard Range</td>
+        <td>270 km</td>
+        <td>175 km/h</td>
+        <td>8.6 sec</td>
+        <td>181 Wh/km</td>
+        </tr>
+        <tr>
+        <td>MG ZS EV Long Range</td>
+        <td>365 km</td>
+        <td>175 km/h</td>
+        <td>8.4 sec</td>
+        <td>187 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQV 250 Long</td>
+        <td>205 km</td>
+        <td>160 km/h</td>
+        <td>12.0 sec</td>
+        <td>293 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQV 250 Extra-Long</td>
+        <td>205 km</td>
+        <td>160 km/h</td>
+        <td>12.0 sec</td>
+        <td>293 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Opel Combo-e Life 50 kWh</td>
+        <td>205 km</td>
+        <td>135 km/h</td>
+        <td>11.7 sec</td>
+        <td>226 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Opel Combo-e Life XL 50 kWh</td>
+        <td>200 km</td>
+        <td>135 km/h</td>
+        <td>11.7 sec</td>
+        <td>232 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Citroen e-Berlingo M 50 kWh</td>
+        <td>205 km</td>
+        <td>135 km/h</td>
+        <td>11.7 sec</td>
+        <td>226 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Citroen e-Berlingo XL 50 kWh</td>
+        <td>200 km</td>
+        <td>135 km/h</td>
+        <td>11.7 sec</td>
+        <td>232 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Tesla Model 3</td>
+        <td>380 km</td>
+        <td>225 km/h</td>
+        <td>6.1 sec</td>
+        <td>151 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Volkswagen ID.5 Pro</td>
+        <td>430 km</td>
+        <td>160 km/h</td>
+        <td>10.4 sec</td>
+        <td>179 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Volkswagen ID.5 Pro Performance</td>
+        <td>430 km</td>
+        <td>160 km/h</td>
+        <td>8.4 sec</td>
+        <td>179 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Volkswagen ID.5 GTX</td>
+        <td>405 km</td>
+        <td>180 km/h</td>
+        <td>6.3 sec</td>
+        <td>190 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQB 300 4MATIC</td>
+        <td>335 km</td>
+        <td>160 km/h</td>
+        <td>8.0 sec</td>
+        <td>199 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Porsche Taycan GTS</td>
+        <td>450 km</td>
+        <td>250 km/h</td>
+        <td>3.7 sec</td>
+        <td>186 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Porsche Taycan GTS Sport Turismo</td>
+        <td>425 km</td>
+        <td>250 km/h</td>
+        <td>3.7 sec</td>
+        <td>197 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Toyota bZ4X FWD</td>
+        <td>335 km</td>
+        <td>160 km/h</td>
+        <td>7.5 sec</td>
+        <td>191 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Toyota bZ4X AWD</td>
+        <td>330 km</td>
+        <td>160 km/h</td>
+        <td>6.9 sec</td>
+        <td>194 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Subaru Solterra AWD</td>
+        <td>320 km</td>
+        <td>160 km/h</td>
+        <td>6.9 sec</td>
+        <td>200 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Peugeot e-208</td>
+        <td>290 km</td>
+        <td>150 km/h</td>
+        <td>8.1 sec</td>
+        <td>160 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Peugeot e-2008 SUV</td>
+        <td>260 km</td>
+        <td>150 km/h</td>
+        <td>8.5 sec</td>
+        <td>178 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Opel Corsa-e</td>
+        <td>295 km</td>
+        <td>150 km/h</td>
+        <td>8.1 sec</td>
+        <td>157 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Opel Mokka-e</td>
+        <td>260 km</td>
+        <td>150 km/h</td>
+        <td>9.2 sec</td>
+        <td>178 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Citroen e-C4</td>
+        <td>275 km</td>
+        <td>150 km/h</td>
+        <td>9.7 sec</td>
+        <td>168 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Renault Megane E-Tech EV60 130hp</td>
+        <td>365 km</td>
+        <td>150 km/h</td>
+        <td>10.5 sec</td>
+        <td>164 Wh/km</td>
+        </tr>
+        <tr>
+        <td>SsangYong Korando e-Motion</td>
+        <td>290 km</td>
+        <td>156 km/h</td>
+        <td>8.5 sec</td>
+        <td>193 Wh/km</td>
+        </tr>
+        <tr>
+        <td>BMW iX M60</td>
+        <td>485 km</td>
+        <td>250 km/h</td>
+        <td>3.8 sec</td>
+        <td>217 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Tesla Model 3 Long Range Dual Motor</td>
+        <td>485 km</td>
+        <td>233 km/h</td>
+        <td>4.4 sec</td>
+        <td>155 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Citroen e-Jumpy Combi M 50 kWh</td>
+        <td>185 km</td>
+        <td>130 km/h</td>
+        <td>12.1 sec</td>
+        <td>250 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Citroen e-Jumpy Combi XL 50 kWh</td>
+        <td>180 km</td>
+        <td>130 km/h</td>
+        <td>12.1 sec</td>
+        <td>257 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Citroen e-Jumpy Combi M 75 kWh</td>
+        <td>265 km</td>
+        <td>130 km/h</td>
+        <td>13.3 sec</td>
+        <td>257 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Citroen e-Jumpy Combi XL 75 kWh</td>
+        <td>260 km</td>
+        <td>130 km/h</td>
+        <td>13.3 sec</td>
+        <td>262 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Opel Vivaro-e Combi M 50 kWh</td>
+        <td>185 km</td>
+        <td>130 km/h</td>
+        <td>12.1 sec</td>
+        <td>250 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Opel Vivaro-e Combi L 50 kWh</td>
+        <td>180 km</td>
+        <td>130 km/h</td>
+        <td>12.1 sec</td>
+        <td>257 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Opel Vivaro-e Combi M 75 kWh</td>
+        <td>265 km</td>
+        <td>130 km/h</td>
+        <td>13.3 sec</td>
+        <td>257 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Opel Vivaro-e Combi L 75 kWh</td>
+        <td>260 km</td>
+        <td>130 km/h</td>
+        <td>13.3 sec</td>
+        <td>262 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Peugeot e-Expert Combi Standard 50 kWh</td>
+        <td>185 km</td>
+        <td>130 km/h</td>
+        <td>13.1 sec</td>
+        <td>250 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Peugeot e-Expert Combi Long 50 kWh</td>
+        <td>180 km</td>
+        <td>130 km/h</td>
+        <td>13.1 sec</td>
+        <td>257 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Peugeot e-Expert Combi Standard 75 kWh</td>
+        <td>265 km</td>
+        <td>130 km/h</td>
+        <td>14.3 sec</td>
+        <td>257 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Peugeot e-Expert Combi Long 75 kWh</td>
+        <td>260 km</td>
+        <td>130 km/h</td>
+        <td>14.3 sec</td>
+        <td>262 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Toyota PROACE Shuttle M 50 kWh</td>
+        <td>180 km</td>
+        <td>130 km/h</td>
+        <td>12.1 sec</td>
+        <td>257 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Toyota PROACE Shuttle L 50 kWh</td>
+        <td>180 km</td>
+        <td>130 km/h</td>
+        <td>12.1 sec</td>
+        <td>257 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Toyota PROACE Shuttle M 75 kWh</td>
+        <td>260 km</td>
+        <td>130 km/h</td>
+        <td>13.1 sec</td>
+        <td>262 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Toyota PROACE Shuttle L 75 kWh</td>
+        <td>260 km</td>
+        <td>130 km/h</td>
+        <td>13.1 sec</td>
+        <td>262 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes eVito Tourer Long 90 kWh</td>
+        <td>310 km</td>
+        <td>160 km/h</td>
+        <td>12.0 sec</td>
+        <td>290 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes eVito Tourer Extra-Long 90 kWh</td>
+        <td>305 km</td>
+        <td>160 km/h</td>
+        <td>12.0 sec</td>
+        <td>295 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes eVito Tourer Long 60 kWh</td>
+        <td>210 km</td>
+        <td>160 km/h</td>
+        <td>12.0 sec</td>
+        <td>286 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes eVito Tourer Extra-Long 60 kWh</td>
+        <td>205 km</td>
+        <td>160 km/h</td>
+        <td>12.0 sec</td>
+        <td>293 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Tesla Model Y Long Range Dual Motor</td>
+        <td>435 km</td>
+        <td>217 km/h</td>
+        <td>5.0 sec</td>
+        <td>172 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Tesla Model 3 Performance</td>
+        <td>460 km</td>
+        <td>261 km/h</td>
+        <td>3.3 sec</td>
+        <td>163 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Porsche Taycan Sport Turismo</td>
+        <td>380 km</td>
+        <td>230 km/h</td>
+        <td>5.4 sec</td>
+        <td>187 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Porsche Taycan Plus Sport Turismo</td>
+        <td>445 km</td>
+        <td>230 km/h</td>
+        <td>5.4 sec</td>
+        <td>188 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Porsche Taycan 4S Sport Turismo</td>
+        <td>370 km</td>
+        <td>250 km/h</td>
+        <td>4.0 sec</td>
+        <td>192 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Porsche Taycan 4S Plus Sport Turismo</td>
+        <td>430 km</td>
+        <td>250 km/h</td>
+        <td>4.0 sec</td>
+        <td>195 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Porsche Taycan Turbo Sport Turismo</td>
+        <td>405 km</td>
+        <td>260 km/h</td>
+        <td>3.2 sec</td>
+        <td>207 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Porsche Taycan Turbo S Sport Turismo</td>
+        <td>395 km</td>
+        <td>260 km/h</td>
+        <td>2.8 sec</td>
+        <td>212 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Volkswagen ID.4 Pro</td>
+        <td>410 km</td>
+        <td>160 km/h</td>
+        <td>10.4 sec</td>
+        <td>188 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Skoda Enyaq Coupe iV 60</td>
+        <td>335 km</td>
+        <td>160 km/h</td>
+        <td>8.8 sec</td>
+        <td>173 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Skoda Enyaq Coupe iV 80</td>
+        <td>445 km</td>
+        <td>160 km/h</td>
+        <td>8.7 sec</td>
+        <td>173 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Skoda Enyaq Coupe iV 80x</td>
+        <td>430 km</td>
+        <td>160 km/h</td>
+        <td>7.0 sec</td>
+        <td>179 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Skoda Enyaq Coupe iV RS</td>
+        <td>405 km</td>
+        <td>180 km/h</td>
+        <td>6.5 sec</td>
+        <td>190 Wh/km</td>
+        </tr>
+        <tr>
+        <td>MG MG5 Electric Standard Range</td>
+        <td>265 km</td>
+        <td>185 km/h</td>
+        <td>7.7 sec</td>
+        <td>174 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Genesis GV60 Premium</td>
+        <td>390 km</td>
+        <td>185 km/h</td>
+        <td>7.8 sec</td>
+        <td>190 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Genesis GV60 Sport</td>
+        <td>380 km</td>
+        <td>200 km/h</td>
+        <td>5.5 sec</td>
+        <td>195 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Genesis GV60 Sport Plus</td>
+        <td>365 km</td>
+        <td>235 km/h</td>
+        <td>4.0 sec</td>
+        <td>203 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Volkswagen e-Up!</td>
+        <td>205 km</td>
+        <td>130 km/h</td>
+        <td>11.9 sec</td>
+        <td>158 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Volkswagen ID. Buzz Pro</td>
+        <td>330 km</td>
+        <td>145 km/h</td>
+        <td>10.2 sec</td>
+        <td>233 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQE AMG 43 4MATIC</td>
+        <td>485 km</td>
+        <td>210 km/h</td>
+        <td>4.2 sec</td>
+        <td>187 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQE AMG 53 4MATIC+</td>
+        <td>480 km</td>
+        <td>240 km/h</td>
+        <td>3.5 sec</td>
+        <td>189 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Nissan Leaf</td>
+        <td>235 km</td>
+        <td>144 km/h</td>
+        <td>7.9 sec</td>
+        <td>166 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Nissan Leaf e+</td>
+        <td>340 km</td>
+        <td>157 km/h</td>
+        <td>6.9 sec</td>
+        <td>174 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Hyundai IONIQ 5 Long Range 2WD</td>
+        <td>390 km</td>
+        <td>185 km/h</td>
+        <td>7.3 sec</td>
+        <td>190 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Hyundai IONIQ 5 Long Range AWD</td>
+        <td>385 km</td>
+        <td>185 km/h</td>
+        <td>5.1 sec</td>
+        <td>192 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQB 250</td>
+        <td>345 km</td>
+        <td>160 km/h</td>
+        <td>8.9 sec</td>
+        <td>193 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Kia Niro EV</td>
+        <td>380 km</td>
+        <td>167 km/h</td>
+        <td>7.8 sec</td>
+        <td>171 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Smart #1</td>
+        <td>330 km</td>
+        <td>180 km/h</td>
+        <td>6.7 sec</td>
+        <td>188 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQS SUV 450+</td>
+        <td>495 km</td>
+        <td>210 km/h</td>
+        <td>6.7 sec</td>
+        <td>219 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQS SUV 450 4MATIC</td>
+        <td>485 km</td>
+        <td>210 km/h</td>
+        <td>6.0 sec</td>
+        <td>224 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQS SUV 580 4MATIC</td>
+        <td>485 km</td>
+        <td>210 km/h</td>
+        <td>4.6 sec</td>
+        <td>224 Wh/km</td>
+        </tr>
+        <tr>
+        <td>BMW i7 xDrive60</td>
+        <td>510 km</td>
+        <td>240 km/h</td>
+        <td>4.7 sec</td>
+        <td>199 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Lexus RZ 450e</td>
+        <td>310 km</td>
+        <td>160 km/h</td>
+        <td>5.6 sec</td>
+        <td>206 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Aiways U5</td>
+        <td>315 km</td>
+        <td>150 km/h</td>
+        <td>7.5 sec</td>
+        <td>190 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mazda MX-30</td>
+        <td>170 km</td>
+        <td>140 km/h</td>
+        <td>9.7 sec</td>
+        <td>176 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Lucid Air Dream Edition R</td>
+        <td>685 km</td>
+        <td>270 km/h</td>
+        <td>2.9 sec</td>
+        <td>172 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQA 250</td>
+        <td>355 km</td>
+        <td>160 km/h</td>
+        <td>8.6 sec</td>
+        <td>187 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQA 250+</td>
+        <td>375 km</td>
+        <td>160 km/h</td>
+        <td>8.6 sec</td>
+        <td>188 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQS 450 4MATIC</td>
+        <td>615 km</td>
+        <td>210 km/h</td>
+        <td>5.6 sec</td>
+        <td>175 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQS 500 4MATIC</td>
+        <td>605 km</td>
+        <td>210 km/h</td>
+        <td>4.8 sec</td>
+        <td>178 Wh/km</td>
+        </tr>
+        <tr>
+        <td>BMW iX1 xDrive30</td>
+        <td>355 km</td>
+        <td>180 km/h</td>
+        <td>5.6 sec</td>
+        <td>182 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Volkswagen ID.4 Pro 4MOTION</td>
+        <td>405 km</td>
+        <td>180 km/h</td>
+        <td>6.9 sec</td>
+        <td>190 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Genesis G80 Electrified Luxury</td>
+        <td>440 km</td>
+        <td>225 km/h</td>
+        <td>4.9 sec</td>
+        <td>188 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Dacia Spring Electric 45</td>
+        <td>165 km</td>
+        <td>125 km/h</td>
+        <td>19.1 sec</td>
+        <td>152 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Citroen e-C4 X</td>
+        <td>275 km</td>
+        <td>150 km/h</td>
+        <td>9.7 sec</td>
+        <td>168 Wh/km</td>
+        </tr>
+        <tr>
+        <td>MG MG4 Electric 51 kWh</td>
+        <td>300 km</td>
+        <td>160 km/h</td>
+        <td>7.7 sec</td>
+        <td>169 Wh/km</td>
+        </tr>
+        <tr>
+        <td>MG MG4 Electric 64 kWh</td>
+        <td>365 km</td>
+        <td>160 km/h</td>
+        <td>7.9 sec</td>
+        <td>169 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Fisker Ocean Sport</td>
+        <td>380 km</td>
+        <td>160 km/h</td>
+        <td>7.4 sec</td>
+        <td>197 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Fisker Ocean Ultra</td>
+        <td>510 km</td>
+        <td>200 km/h</td>
+        <td>4.2 sec</td>
+        <td>196 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Fisker Ocean Extreme</td>
+        <td>510 km</td>
+        <td>200 km/h</td>
+        <td>3.9 sec</td>
+        <td>196 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Fisker Ocean One</td>
+        <td>510 km</td>
+        <td>200 km/h</td>
+        <td>3.9 sec</td>
+        <td>196 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQE 300</td>
+        <td>515 km</td>
+        <td>210 km/h</td>
+        <td>7.6 sec</td>
+        <td>173 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQE 350</td>
+        <td>515 km</td>
+        <td>210 km/h</td>
+        <td>6.4 sec</td>
+        <td>173 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQE 350 4MATIC</td>
+        <td>500 km</td>
+        <td>210 km/h</td>
+        <td>6.3 sec</td>
+        <td>181 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQE 500 4MATIC</td>
+        <td>500 km</td>
+        <td>210 km/h</td>
+        <td>4.7 sec</td>
+        <td>181 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Hyundai IONIQ 6 Standard Range 2WD</td>
+        <td>360 km</td>
+        <td>185 km/h</td>
+        <td>8.8 sec</td>
+        <td>150 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Hyundai IONIQ 6 Long Range 2WD</td>
+        <td>475 km</td>
+        <td>185 km/h</td>
+        <td>7.4 sec</td>
+        <td>156 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Hyundai IONIQ 6 Long Range AWD</td>
+        <td>440 km</td>
+        <td>185 km/h</td>
+        <td>5.1 sec</td>
+        <td>168 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Audi Q4 Sportback e-tron 45 quattro</td>
+        <td>400 km</td>
+        <td>180 km/h</td>
+        <td>6.9 sec</td>
+        <td>192 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Fiat E-Ulysse L2 50 kWh</td>
+        <td>185 km</td>
+        <td>130 km/h</td>
+        <td>12.1 sec</td>
+        <td>250 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Fiat E-Ulysse L2 75 kWh</td>
+        <td>265 km</td>
+        <td>130 km/h</td>
+        <td>13.3 sec</td>
+        <td>257 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Fiat E-Ulysse L3 50 kWh</td>
+        <td>180 km</td>
+        <td>130 km/h</td>
+        <td>12.1 sec</td>
+        <td>257 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Fiat E-Ulysse L3 75 kWh</td>
+        <td>260 km</td>
+        <td>130 km/h</td>
+        <td>13.3 sec</td>
+        <td>262 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Genesis GV70 Electrified Sport</td>
+        <td>350 km</td>
+        <td>235 km/h</td>
+        <td>4.2 sec</td>
+        <td>211 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Fiat 500e 3+1 24 kWh</td>
+        <td>135 km</td>
+        <td>135 km/h</td>
+        <td>9.0 sec</td>
+        <td>158 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Fiat 500e Cabrio 24 kWh</td>
+        <td>135 km</td>
+        <td>135 km/h</td>
+        <td>9.0 sec</td>
+        <td>158 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Tesla Model Y</td>
+        <td>345 km</td>
+        <td>217 km/h</td>
+        <td>6.9 sec</td>
+        <td>167 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Peugeot e-308</td>
+        <td>310 km</td>
+        <td>150 km/h</td>
+        <td>9.0 sec</td>
+        <td>164 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Peugeot e-308 SW</td>
+        <td>300 km</td>
+        <td>150 km/h</td>
+        <td>9.0 sec</td>
+        <td>169 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Hongqi E-HS9 84 kWh</td>
+        <td>305 km</td>
+        <td>200 km/h</td>
+        <td>6.5 sec</td>
+        <td>251 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Hongqi E-HS9 99 kWh</td>
+        <td>355 km</td>
+        <td>200 km/h</td>
+        <td>4.9 sec</td>
+        <td>254 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Smart #1 Brabus</td>
+        <td>320 km</td>
+        <td>180 km/h</td>
+        <td>3.9 sec</td>
+        <td>194 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Kia e-Soul 64 kWh</td>
+        <td>370 km</td>
+        <td>167 km/h</td>
+        <td>7.9 sec</td>
+        <td>173 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Kia e-Soul 39.2 kWh</td>
+        <td>230 km</td>
+        <td>157 km/h</td>
+        <td>9.9 sec</td>
+        <td>170 Wh/km</td>
+        </tr>
+        <tr>
+        <td>NIO ET7 75 kWh</td>
+        <td>400 km</td>
+        <td>200 km/h</td>
+        <td>3.8 sec</td>
+        <td>176 Wh/km</td>
+        </tr>
+        <tr>
+        <td>NIO ET7 100 kWh</td>
+        <td>505 km</td>
+        <td>200 km/h</td>
+        <td>3.8 sec</td>
+        <td>178 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Ford Mustang Mach-E SR RWD</td>
+        <td>355 km</td>
+        <td>180 km/h</td>
+        <td>6.9 sec</td>
+        <td>197 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Ford Mustang Mach-E ER RWD</td>
+        <td>455 km</td>
+        <td>180 km/h</td>
+        <td>7.0 sec</td>
+        <td>200 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Ford Mustang Mach-E SR AWD</td>
+        <td>345 km</td>
+        <td>180 km/h</td>
+        <td>6.3 sec</td>
+        <td>203 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Ford Mustang Mach-E ER AWD</td>
+        <td>440 km</td>
+        <td>180 km/h</td>
+        <td>5.8 sec</td>
+        <td>207 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Ford Mustang Mach-E GT</td>
+        <td>425 km</td>
+        <td>200 km/h</td>
+        <td>4.4 sec</td>
+        <td>214 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Polestar 3 Long Range Dual motor</td>
+        <td>490 km</td>
+        <td>210 km/h</td>
+        <td>5.0 sec</td>
+        <td>218 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Polestar 3 Long Range Performance</td>
+        <td>470 km</td>
+        <td>210 km/h</td>
+        <td>4.7 sec</td>
+        <td>228 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQE SUV 350+</td>
+        <td>470 km</td>
+        <td>210 km/h</td>
+        <td>7.0 sec</td>
+        <td>193 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQE SUV 350 4MATIC</td>
+        <td>455 km</td>
+        <td>210 km/h</td>
+        <td>6.5 sec</td>
+        <td>199 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQE SUV 500 4MATIC</td>
+        <td>455 km</td>
+        <td>210 km/h</td>
+        <td>5.0 sec</td>
+        <td>199 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQE SUV AMG 43 4MATIC</td>
+        <td>435 km</td>
+        <td>210 km/h</td>
+        <td>4.3 sec</td>
+        <td>208 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQE SUV AMG 53 4MATIC+</td>
+        <td>425 km</td>
+        <td>240 km/h</td>
+        <td>3.5 sec</td>
+        <td>213 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Rolls-Royce Spectre</td>
+        <td>455 km</td>
+        <td>250 km/h</td>
+        <td>4.5 sec</td>
+        <td>220 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Aiways U6</td>
+        <td>350 km</td>
+        <td>160 km/h</td>
+        <td>7.0 sec</td>
+        <td>171 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Lotus Eletre</td>
+        <td>520 km</td>
+        <td>250 km/h</td>
+        <td>4.5 sec</td>
+        <td>206 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Lotus Eletre R</td>
+        <td>450 km</td>
+        <td>260 km/h</td>
+        <td>2.9 sec</td>
+        <td>238 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Audi Q8 e-tron 50 quattro</td>
+        <td>415 km</td>
+        <td>200 km/h</td>
+        <td>6.0 sec</td>
+        <td>214 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Audi Q8 e-tron 55 quattro</td>
+        <td>495 km</td>
+        <td>200 km/h</td>
+        <td>5.6 sec</td>
+        <td>214 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Audi Q8 e-tron Sportback 50 quattro</td>
+        <td>440 km</td>
+        <td>200 km/h</td>
+        <td>6.0 sec</td>
+        <td>202 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Audi Q8 e-tron Sportback 55 quattro</td>
+        <td>525 km</td>
+        <td>200 km/h</td>
+        <td>5.6 sec</td>
+        <td>202 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Audi SQ8 e-tron</td>
+        <td>445 km</td>
+        <td>210 km/h</td>
+        <td>4.5 sec</td>
+        <td>238 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Audi SQ8 e-tron Sportback</td>
+        <td>470 km</td>
+        <td>210 km/h</td>
+        <td>4.5 sec</td>
+        <td>226 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Volvo EX90 Twin Motor</td>
+        <td>455 km</td>
+        <td>180 km/h</td>
+        <td>5.9 sec</td>
+        <td>235 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Volvo EX90 Twin Motor Performance</td>
+        <td>440 km</td>
+        <td>180 km/h</td>
+        <td>4.9 sec</td>
+        <td>243 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQB 250+</td>
+        <td>365 km</td>
+        <td>160 km/h</td>
+        <td>8.9 sec</td>
+        <td>193 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Toyota Proace City Verso Electric L1 50 kWh</td>
+        <td>210 km</td>
+        <td>135 km/h</td>
+        <td>11.2 sec</td>
+        <td>220 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Toyota Proace City Verso Electric L2 50 kWh</td>
+        <td>205 km</td>
+        <td>135 km/h</td>
+        <td>11.2 sec</td>
+        <td>226 Wh/km</td>
+        </tr>
+        <tr>
+        <td>ORA Funky Cat 48 kWh</td>
+        <td>260 km</td>
+        <td>160 km/h</td>
+        <td>8.3 sec</td>
+        <td>175 Wh/km</td>
+        </tr>
+        <tr>
+        <td>BYD ATTO 3</td>
+        <td>320 km</td>
+        <td>160 km/h</td>
+        <td>7.3 sec</td>
+        <td>188 Wh/km</td>
+        </tr>
+        <tr>
+        <td>BYD TANG</td>
+        <td>350 km</td>
+        <td>180 km/h</td>
+        <td>4.6 sec</td>
+        <td>240 Wh/km</td>
+        </tr>
+        <tr>
+        <td>BYD HAN</td>
+        <td>465 km</td>
+        <td>180 km/h</td>
+        <td>3.9 sec</td>
+        <td>178 Wh/km</td>
+        </tr>
+        <tr>
+        <td>BMW i4 eDrive35</td>
+        <td>400 km</td>
+        <td>190 km/h</td>
+        <td>6.0 sec</td>
+        <td>168 Wh/km</td>
+        </tr>
+        <tr>
+        <td>NIO ET5 75 kWh</td>
+        <td>395 km</td>
+        <td>200 km/h</td>
+        <td>4.0 sec</td>
+        <td>178 Wh/km</td>
+        </tr>
+        <tr>
+        <td>NIO ET5 100 kWh</td>
+        <td>495 km</td>
+        <td>200 km/h</td>
+        <td>4.0 sec</td>
+        <td>182 Wh/km</td>
+        </tr>
+        <tr>
+        <td>NIO EL7 75 kWh</td>
+        <td>340 km</td>
+        <td>200 km/h</td>
+        <td>3.9 sec</td>
+        <td>207 Wh/km</td>
+        </tr>
+        <tr>
+        <td>NIO EL7 100 kWh</td>
+        <td>430 km</td>
+        <td>200 km/h</td>
+        <td>3.9 sec</td>
+        <td>209 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Abarth 500e Scorpionissima</td>
+        <td>225 km</td>
+        <td>155 km/h</td>
+        <td>7.0 sec</td>
+        <td>166 Wh/km</td>
+        </tr>
+        <tr>
+        <td>DS 3 E-Tense</td>
+        <td>300 km</td>
+        <td>150 km/h</td>
+        <td>9.0 sec</td>
+        <td>169 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Opel Astra Electric</td>
+        <td>310 km</td>
+        <td>170 km/h</td>
+        <td>8.5 sec</td>
+        <td>164 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Opel Astra Sports Tourer Electric</td>
+        <td>300 km</td>
+        <td>170 km/h</td>
+        <td>8.5 sec</td>
+        <td>169 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Jeep Avenger Electric 1st Edition</td>
+        <td>295 km</td>
+        <td>150 km/h</td>
+        <td>9.0 sec</td>
+        <td>172 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mercedes EQS SUV 500 4MATIC</td>
+        <td>485 km</td>
+        <td>210 km/h</td>
+        <td>5.2 sec</td>
+        <td>224 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Volvo XC40 Recharge Single Motor</td>
+        <td>345 km</td>
+        <td>180 km/h</td>
+        <td>7.3 sec</td>
+        <td>191 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Volvo XC40 Recharge Single Motor ER</td>
+        <td>405 km</td>
+        <td>180 km/h</td>
+        <td>7.3 sec</td>
+        <td>195 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Volvo XC40 Recharge Twin Motor</td>
+        <td>390 km</td>
+        <td>180 km/h</td>
+        <td>4.8 sec</td>
+        <td>203 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Volvo C40 Recharge Single Motor</td>
+        <td>355 km</td>
+        <td>180 km/h</td>
+        <td>7.3 sec</td>
+        <td>186 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Volvo C40 Recharge Single Motor ER</td>
+        <td>420 km</td>
+        <td>180 km/h</td>
+        <td>7.3 sec</td>
+        <td>188 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Volvo C40 Recharge Twin Motor</td>
+        <td>400 km</td>
+        <td>180 km/h</td>
+        <td>4.7 sec</td>
+        <td>198 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Renault Kangoo E-Tech Electric</td>
+        <td>215 km</td>
+        <td>132 km/h</td>
+        <td>12.6 sec</td>
+        <td>205 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Maserati GranTurismo Folgore</td>
+        <td>425 km</td>
+        <td>320 km/h</td>
+        <td>2.7 sec</td>
+        <td>195 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Seres 3</td>
+        <td>260 km</td>
+        <td>155 km/h</td>
+        <td>8.9 sec</td>
+        <td>196 Wh/km</td>
+        </tr>
+        <tr>
+        <td>VinFast VF 8 Eco Standard Range</td>
+        <td>405 km</td>
+        <td>200 km/h</td>
+        <td>5.9 sec</td>
+        <td>202 Wh/km</td>
+        </tr>
+        <tr>
+        <td>VinFast VF 8 Eco Extended Range</td>
+        <td>425 km</td>
+        <td>200 km/h</td>
+        <td>5.9 sec</td>
+        <td>206 Wh/km</td>
+        </tr>
+        <tr>
+        <td>VinFast VF 8 Plus Standard Range</td>
+        <td>400 km</td>
+        <td>200 km/h</td>
+        <td>5.5 sec</td>
+        <td>205 Wh/km</td>
+        </tr>
+        <tr>
+        <td>VinFast VF 8 Plus Extended Range</td>
+        <td>425 km</td>
+        <td>200 km/h</td>
+        <td>5.5 sec</td>
+        <td>206 Wh/km</td>
+        </tr>
+        <tr>
+        <td>VinFast VF 9 Standard Range</td>
+        <td>400 km</td>
+        <td>200 km/h</td>
+        <td>6.5 sec</td>
+        <td>230 Wh/km</td>
+        </tr>
+        <tr>
+        <td>VinFast VF 9 Extended Range</td>
+        <td>520 km</td>
+        <td>200 km/h</td>
+        <td>6.5 sec</td>
+        <td>237 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Jaguar I-Pace EV400</td>
+        <td>380 km</td>
+        <td>200 km/h</td>
+        <td>4.8 sec</td>
+        <td>223 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Dacia Spring Electric 65 Extreme</td>
+        <td>160 km</td>
+        <td>125 km/h</td>
+        <td>13.7 sec</td>
+        <td>156 Wh/km</td>
+        </tr>
+        <tr>
+        <td>ORA Funky Cat 63 kWh</td>
+        <td>340 km</td>
+        <td>160 km/h</td>
+        <td>8.2 sec</td>
+        <td>174 Wh/km</td>
+        </tr>
+        <tr>
+        <td>ORA Funky Cat GT</td>
+        <td>330 km</td>
+        <td>160 km/h</td>
+        <td>8.2 sec</td>
+        <td>180 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Jeep Avenger Electric</td>
+        <td>300 km</td>
+        <td>150 km/h</td>
+        <td>9.0 sec</td>
+        <td>169 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Polestar 2 Standard Range Single Motor</td>
+        <td>385 km</td>
+        <td>205 km/h</td>
+        <td>6.4 sec</td>
+        <td>174 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Polestar 2 Long Range Single Motor</td>
+        <td>440 km</td>
+        <td>205 km/h</td>
+        <td>6.2 sec</td>
+        <td>177 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Polestar 2 Long Range Dual Motor</td>
+        <td>420 km</td>
+        <td>205 km/h</td>
+        <td>4.5 sec</td>
+        <td>186 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Polestar 2 Long Range Performance</td>
+        <td>410 km</td>
+        <td>205 km/h</td>
+        <td>4.2 sec</td>
+        <td>190 Wh/km</td>
+        </tr>
+        <tr>
+        <td>XPENG P7 RWD Long Range</td>
+        <td>500 km</td>
+        <td>200 km/h</td>
+        <td>6.7 sec</td>
+        <td>165 Wh/km</td>
+        </tr>
+        <tr>
+        <td>XPENG P7 AWD Performance</td>
+        <td>470 km</td>
+        <td>200 km/h</td>
+        <td>4.1 sec</td>
+        <td>176 Wh/km</td>
+        </tr>
+        <tr>
+        <td>XPENG P7 Wing Edition</td>
+        <td>465 km</td>
+        <td>200 km/h</td>
+        <td>4.1 sec</td>
+        <td>178 Wh/km</td>
+        </tr>
+        <tr>
+        <td>XPENG G9 RWD Standard Range</td>
+        <td>375 km</td>
+        <td>200 km/h</td>
+        <td>6.4 sec</td>
+        <td>200 Wh/km</td>
+        </tr>
+        <tr>
+        <td>XPENG G9 RWD Long Range</td>
+        <td>470 km</td>
+        <td>200 km/h</td>
+        <td>6.4 sec</td>
+        <td>200 Wh/km</td>
+        </tr>
+        <tr>
+        <td>XPENG G9 AWD Long Range</td>
+        <td>440 km</td>
+        <td>200 km/h</td>
+        <td>3.9 sec</td>
+        <td>214 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Mini Cooper SE Convertible</td>
+        <td>170 km</td>
+        <td>150 km/h</td>
+        <td>8.2 sec</td>
+        <td>170 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Volkswagen ID.4 GTX</td>
+        <td>400 km</td>
+        <td>180 km/h</td>
+        <td>6.3 sec</td>
+        <td>193 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Hyundai Kona Electric 48 kWh</td>
+        <td>300 km</td>
+        <td>155 km/h</td>
+        <td>10.0 sec</td>
+        <td>161 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Hyundai Kona Electric 65 kWh</td>
+        <td>400 km</td>
+        <td>167 km/h</td>
+        <td>8.0 sec</td>
+        <td>164 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Volkswagen ID.3 Pro</td>
+        <td>350 km</td>
+        <td>160 km/h</td>
+        <td>7.3 sec</td>
+        <td>166 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Volkswagen ID.3 Pro S - 4 Seats</td>
+        <td>455 km</td>
+        <td>160 km/h</td>
+        <td>7.9 sec</td>
+        <td>169 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Kia EV9 99.8 kWh RWD</td>
+        <td>460 km</td>
+        <td>180 km/h</td>
+        <td>9.4 sec</td>
+        <td>217 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Kia EV9 99.8 kWh AWD</td>
+        <td>450 km</td>
+        <td>180 km/h</td>
+        <td>5.3 sec</td>
+        <td>222 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Peugeot e-208</td>
+        <td>310 km</td>
+        <td>150 km/h</td>
+        <td>8.2 sec</td>
+        <td>155 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Maxus MIFA 9</td>
+        <td>345 km</td>
+        <td>180 km/h</td>
+        <td>9.2 sec</td>
+        <td>261 Wh/km</td>
+        </tr>
+        <tr>
+        <td>BMW i7 M70 xDrive</td>
+        <td>490 km</td>
+        <td>250 km/h</td>
+        <td>3.7 sec</td>
+        <td>208 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Volkswagen ID.7 Pro</td>
+        <td>470 km</td>
+        <td>180 km/h</td>
+        <td>8.0 sec</td>
+        <td>164 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Volkswagen ID.7 Pro S</td>
+        <td>520 km</td>
+        <td>180 km/h</td>
+        <td>7.0 sec</td>
+        <td>165 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Polestar 4 Long Range Single Motor</td>
+        <td>510 km</td>
+        <td>180 km/h</td>
+        <td>7.4 sec</td>
+        <td>184 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Polestar 4 Long Range Dual Motor</td>
+        <td>475 km</td>
+        <td>200 km/h</td>
+        <td>3.8 sec</td>
+        <td>198 Wh/km</td>
+        </tr>
+        <tr>
+        <td>Maserati Grecale Folgore</td>
+        <td>405 km</td>
+        <td>220 km/h</td>
+        <td>4.1 sec</td>
+        <td>235 Wh/km</td>
+        </tr>
+  
+    <tbody>
+</table>
+
+<!--		Start Pagination -->
+			<div class='pagination-container'>
+				<nav>
+				  <ul class="pagination">
+				   <!--	Here the JS Function Will Add the Rows -->
+				  </ul>
+				</nav>
+			</div>
+      <div class="rows_count">Showing 11 to 20 of 91 entries</div>
+
+
+        </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    
+                   
+                </div>
+            </div>
+            
+              
+    <section id="services" style="margin-top:4px">
+     
+        <h2 class="section-heading">Future Plans</h2>
+            
+        
+    </section>
+
+             
+            <div class="row">
+                
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="https://png.pngtree.com/png-clipart/20191121/original/pngtree-machine-learning-artificial-intelligence-vector-png-image_5140459.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>ML Model</h4>
+                        <p class="text-muted">Clustering models to determine the optimal car model based on user preferences.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="https://media.istockphoto.com/id/1177118488/vector/touch-smartphone-icon-with-hand-for-your-projects.jpg?s=612x612&w=0&k=20&c=txLl828viaMRnrxFZJf-8cj9WyEqRKU2HyEJxOHBucg=" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Mobile App</h4>
+                        <p class="text-muted">Designed to streamline user-friendly interface and comprehensive features.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>User Profiles</h4>
+                        <p class="text-muted">Allowing users to compare and select cars based on their individual preferences</p>
+                    </div>
+                </div>
+                
+              
+                
+               
+                </div>
+            </div>
+            
+        </div>
+
+        
+    </section>
+
+  
+
+
+    <!-- Clients Aside -->
+   
+
+    <section id="contact">
+        <div class="container">
+            
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+               
+            </div>
+
+  
+  <div class="contact-wrapper">
+  
+    <!-- Left contact page --> 
+      
+      <form id="contact-form" class="form-horizontal" role="form" action="mailto:rarora2025@gmail.com" method="GET" enctype="text/plain">
+         
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+          </div>
+        </div>
+  
+        <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+        
+        <button class="btn btn-primary send-button" style = "height: 50px" id="submit" type="submit" value="SEND">
+          <div class="alt-send-button">
+            <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+          </div>
+        
+        </button>
+        
+      </form>
+      
+    <!-- Left contact page --> 
+      
+        <div class="direct-contact-container">
+  <hr>
+          <ul class="contact-list">
+            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:rarora2025@gmail.com" title="Send me an email">rarora2025@gmail.com</a></span></i></li>
+            
+          
+          </ul>
+          <hr>
+  
+        
+          
+  
+          
+  
+        </div>
+      
+    </div>
+     
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright © ElectriChoice 2023</span>
+                </div>
+               
+                <div class="col-md-4">
+                   
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>ML Model</h2>
+                           
+                            
+                            <p>Offering an unparalleled level of accuracy and efficiency in finding the perfect electric car for each individual user. By leveraging our extensive database of electric car models, the clustering model intelligently analyzes user preferences, budget constraints, and sustainability goals to identify the most suitable electric car options. This powerful tool eliminates the guesswork and overwhelming choices, ensuring that users can effortlessly discover an electric car that precisely matches their needs and aligns with their values. With ElectriChoice's ML clustering model, the transition to a greener and more sustainable future has never been more seamless and rewarding.</p>
+                            <p>
+                                
+                           
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Feature</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="0" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Mobile App</h2>
+                           
+                            
+                            <p>Combines user-friendly design with powerful features to provide a comprehensive solution for finding the perfect electric car. With intuitive navigation and an engaging interface, users can effortlessly explore our extensive database of electric car models, considering factors such as budget, preferences, and sustainability goals. Additionally, our cutting-edge machine learning clustering model takes the guesswork out of the equation by accurately matching users with specific electric car options that best meet their needs. With the ElectriChoice mobile app, joining the electric vehicle revolution has never been easier, empowering individuals to make informed decisions that contribute to a greener future while aligning with their personal goals and values.</p>
+                            <p>
+                                
+                           
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Feature</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>User Profiles</h2>
+                           
+                            
+                            <p>With a focus on providing a highly customized experience, User Profiles revolutionize the way individuals compare and select electric cars. By creating a personalized profile, users can input their specific preferences, budget constraints, and sustainability goals. This invaluable tool enables ElectriChoice to curate a tailored selection of electric car options that align perfectly with each user's unique needs and values. With User Profiles, the application empowers individuals to make informed decisions, offering a seamless and efficient car comparison process. By leveraging the power of customization, ElectriChoice ensures that users have a personalized and optimized experience, making the transition from a gas-powered car to an electric car an effortless and rewarding journey towards a greener and more sustainable future.</p>
+                            <p>
+                                
+                           
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Feature</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+  
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/classie.js"></script>
+    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/jqBootstrapValidation.js"></script>
+    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/contact_me.js"></script>
+
+
+<span style="height: 20px; width: 40px; min-height: 20px; min-width: 40px; position: absolute; opacity: 0.85; z-index: 8675309; display: none; cursor: pointer; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAADU0lEQVR42s2WXUhTYRjHz0VEVPRFUGmtVEaFUZFhHxBhsotCU5JwBWEf1EWEEVHQx4UfFWYkFa2biPJiXbUta33OXFtuUXMzJ4bK3Nqay7m5NeZq6h/tPQ+xU20zugjOxR/+7/O8539+5znnwMtNTExwJtMb3L/fiLv3botCSmUjeCaejTOb39AiFothfHxcFIrHY8RksZjBsckJcOIRMfFsHD/SsbExUYpnI8DR0dGUGjSb0byhEJp5Uqg5CTSzc2CQleJbMEj9/ywBcGRkJEk9DQqouEVQT1sK444yWI9UonmTjGqauVLEIlHa9x8lAMbj8SSpp0rwKGMVvg8P46vbg0C7na8z8JsMcgHe7jlEa+edRhiLy8n/TUMfu6EvLElk+U0WtGwrTrdfAGQf5J8iiK4LVzDU28t8JtMSocf8E+l68myaNFXm/6rXslLK7ay5TOunuRvZWpJuvwAYjUaTpOIWoquuAZ219RTaxKYp9BbjycoN5FvL9qH9TBX5rvoGdJythvXYSTxdtRnWylO/ZdqrLsGwszzhWQ593z2KlAwCYCQSSZJ6ehZ0W7bD9VBLgN0NCqr3qR7R2rBrL3pu3Sb/7nDlz2uy6cG0OXk0GTbZXzNp8trsPAQdTj6frlWzN2DcXZGKQQAMh8NJ6rpyHe+PnkCr/CAFdZyvpfpjuvkifLF9wIt1Wwlo0OHie1RvWrKa93RjzfzliTzPKz3ltB0/Tevmwp14wGUgHAzSOoUEwFAolFaaBSuhnslPRkJexUJtZ6v5HtUeLswl33n1BgEY5fvhs9sJ3FAiT+QYyyvoAQJuD0KBAFRTJNAuz5/s3gJgMBhMJwrVFRThM5tY5zUF/A4X1f2fvQTRLCuBreoim0YmAbqNJryvPEXeeq46kaNdkQ/1HCncbJKPs9ZSv2VHGfWsZ2hfkhKAfr8/pdxWKx4wwD69PmVfNSOL+lr2w+gYqHpWDtXt1xQ8AMlWU0e1lqLd/APRHoP8AJqWrQG9gYxcPMsvSJUvAA4MDKTUJ7MZLaVy8v+qT21tcDx/OemePr0RTkNrur4A6PP5xCgBsL+/X4wiQDpuuVxOeL1eMYmYeDY6sOp0z+B0OuHxeEQhxkJMFosJiSO/UinOI/8Pc+l7KKArAT8AAAAASUVORK5CYII=);"></span></body>
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script src='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
